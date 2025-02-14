@@ -53,7 +53,7 @@ class Camera():
     def render(self, world):
         self.initialize()
 
-        path = os.path.join(os.path.dirname(__file__),"..","images", "Test.ppm")
+        path = os.path.join(os.path.dirname(__file__),"..","images", "Normalvector.ppm")
         ppm_file = open(path, 'w')
         title = "P3\n{iw} {ih}\n 255\n".format(iw = self.image_width, ih = self.image_height)
         ppm_file.write(title)
